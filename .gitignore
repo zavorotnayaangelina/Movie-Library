@@ -1,0 +1,34 @@
+# Создаем папку проекта
+mkdir movie-library
+cd movie-library
+
+# Инициализируем Git репозиторий
+git init
+
+# Создаем файл .gitignore
+echo "# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+movies.json
+*.log
+.DS_Store" > .gitignore
+
+# Добавляем файлы в Git
+git add .
+git commit -m "Initial commit: Movie Library application"
